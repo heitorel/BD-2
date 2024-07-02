@@ -4,7 +4,7 @@
 # Marina Gonçalves do Nascimento - 10367291 
 
 # Qual é a quantidade total de consultas feitas pelo “Dr. House” por especialidade?
-
+USE CLIMED;
 SELECT E.NomeE AS Especialidade, COUNT(*) AS TotalConsultas
 FROM CONSULTA C
 INNER JOIN MEDICO M ON C.CRM = M.CRM

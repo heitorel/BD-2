@@ -6,7 +6,7 @@
 # Transferir a consulta do paciente “Diego Pituca” no dia “10/05/2024” às 10
 # a:m,na Especialidade “dermatologia”, com o “Dr. House”, para o dia
 # “24/05/2024”, na mesma hora, como o “Dr. Kildare”, na mesma especialidade.
-
+USE CLIMED;
 UPDATE CONSULTA
 SET CRM = (
     SELECT M.CRM

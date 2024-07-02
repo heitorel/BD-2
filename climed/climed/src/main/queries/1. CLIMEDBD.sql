@@ -5,7 +5,7 @@
 
 # criar BD
 
-CREATE SCHEMA ClIMED;
+CREATE SCHEMA CLIMED;
 USE CLIMED;
 
 # Criar tabelas

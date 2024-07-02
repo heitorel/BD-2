@@ -4,7 +4,7 @@
 # Marina Gonçalves do Nascimento - 10367291 
 
 # Listar os pacientes (CPF, NomeP) consultados pelo “Dr. House” como “Cardiologista”.
-
+USE CLIMED;
 SELECT P.CPF, P.NomeP
 FROM PACIENTE P
 INNER JOIN CONSULTA C ON P.IdPac = C.IdPac

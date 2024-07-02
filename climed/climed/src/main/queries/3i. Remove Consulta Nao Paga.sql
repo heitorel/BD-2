@@ -4,6 +4,6 @@
 # Marina Gonçalves do Nascimento - 10367291 
 
 # Remover todos as consultas não pagas. 
-
+USE CLIMED;
 DELETE FROM CONSULTA
 WHERE Pagou = 'Não';

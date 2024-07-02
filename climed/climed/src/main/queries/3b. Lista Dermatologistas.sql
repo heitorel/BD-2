@@ -4,7 +4,7 @@
 # Marina Gonçalves do Nascimento - 10367291 
 
 #Listar os médicos (CRM, NomeM) que atendem somente na especialidade “Dermatologia”.
-
+USE CLIMED;
 SELECT DISTINCT M.CRM, M.NomeM
 FROM MEDICO M
 INNER JOIN EXERCEESP EE ON M.CRM = EE.CRM

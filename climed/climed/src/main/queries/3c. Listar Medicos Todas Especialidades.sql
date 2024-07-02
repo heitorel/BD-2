@@ -4,7 +4,7 @@
 # Marina Gonçalves do Nascimento - 10367291 
 
 # Listar os médicos (CRM, NomeM) que atendem todas as especialidades.
-
+USE CLIMED;
 SELECT M.CRM, M.NomeM
 FROM MEDICO M
 WHERE NOT EXISTS (

@@ -20,4 +20,11 @@ public class Controller {
     public ConsultaDTO setConsulta(@RequestBody ConsultaDTO consulta){
         return consulta;
     }
+
+    @DeleteMapping("/consultas/deletar/{IdCOn}")
+    public String deleteConsulta(@PathVariable String IdCon){
+        return "um dia vai deletar a consulta: "+ IdCon;
+    }
+
+    //update
 }

@@ -4,7 +4,7 @@
 # Marina Gonçalves do Nascimento - 10367291 
 
 # Quais são os médicos (CRM, NomeM) com o menor número de consultas atendidas? 
-
+USE CLIMED;
 SELECT M.CRM, M.NomeM
 FROM MEDICO M
 LEFT JOIN CONSULTA C ON M.CRM = C.CRM

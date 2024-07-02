@@ -2,7 +2,7 @@
 #
 # Heitor Lopes Bianchi - 10258730
 # Marina Gonçalves do Nascimento - 10367291 
-
+USE CLIMED;
 # Populando tabela de Médicos
 INSERT INTO MEDICO (CRM, NomeM, TelefoneM, Percentual) VALUES 
 ('CRM123', 'Dr. House', '123456789', 70),
@@ -13,7 +13,7 @@ INSERT INTO MEDICO (CRM, NomeM, TelefoneM, Percentual) VALUES
 ('CRM333', 'Dr. Dolittle', '333333333', 75),
 ('CRM444', 'Dr. Fred Nicacio', '444444444', 80),
 ('CRM555', 'Dra. Grey', '66664444', 85),
-('CRM666', 'Dr. Kildare', '66666666', 70),;
+('CRM666', 'Dr. Kildare', '66666666', 70);
 
 # Populando tabela de Especialidades
 INSERT INTO ESPECIALIDADE (IdEsp, NomeE, Indice) VALUES 
@@ -30,8 +30,6 @@ INSERT INTO ESPECIALIDADE (IdEsp, NomeE, Indice) VALUES
 INSERT INTO EXERCEESP (CRM, IdEsp) VALUES 
 ('CRM123', 1),
 ('CRM666', 2),
-('CRM123', 2),
-('CRM456', 2),
 ('CRM789', 3),
 ('CRM111', 4),
 ('CRM222', 5),
@@ -40,7 +38,7 @@ INSERT INTO EXERCEESP (CRM, IdEsp) VALUES
 ('CRM555', 8);
 
 # Populando tabela de Pacientes
-INSERT INTO PACIENTE (IdPac, CPF, NomeP, TelefonePac, Endereco, Idade, Sexo) VALUES 
+INSERT INTO PACIENTE (IdPac, CPF, NomeP, TelefonePac, Endereco, Idade, Sexo) VALUES
 (1, '123.456.789-00', 'Marta Vieira', '111111111', 'Rua A, 123', 35, 'Feminino'),
 (2, '987.654.321-00', 'Ronaldinho Gaucho', '222222222', 'Rua B, 456', 45, 'Masculino'),
 (3, '111.222.333-00', 'Bia Zanertato', '333333333', 'Rua C, 789', 25, 'Feminino'),
@@ -51,7 +49,7 @@ INSERT INTO PACIENTE (IdPac, CPF, NomeP, TelefonePac, Endereco, Idade, Sexo) VAL
 (8, '999.000.111-00', 'Endrick Felipe', '999999999', 'Rua H, 456', 20, 'Masculino');
 
 # Populando tabela de Agenda
-INSERT INTO AGENDA (IdAgenda, DiaSemana, HoraInicio, HoraFIm, CRM) VALUES 
+INSERT INTO AGENDA (IdAgenda, DiaSemana, HoraInicio, HoraFIm, CRM) VALUES
 (1, 'Segunda', '08:00:00', '12:00:00', 'CRM123'),
 (2, 'Terça', '09:00:00', '13:00:00', 'CRM456'),
 (3, 'Quarta', '10:00:00', '14:00:00', 'CRM789'),
@@ -59,12 +57,7 @@ INSERT INTO AGENDA (IdAgenda, DiaSemana, HoraInicio, HoraFIm, CRM) VALUES
 (5, 'Sexta', '09:00:00', '13:00:00', 'CRM222'),
 (6, 'Sábado', '10:00:00', '14:00:00', 'CRM333'),
 (7, 'Domingo', '11:00:00', '15:00:00', 'CRM444'),
-(8, 'Segunda', '12:00:00', '16:00:00', 'CRM555'),
-(4, 'CRM111', 4, 4, '2024-05-08', '08:00:00', '08:30:00', 'Sim', 90, 'Dinheiro'),
-(5, 'CRM222', 5, 5, '2024-05-09', '09:00:00', '10:00:00', 'Sim', 110, 'Cartão'),
-(6, 'CRM333', 6, 6, '2024-05-10', '10:00:00', '11:00:00', 'Sim', 130, 'Dinheiro'),
-(7, 'CRM444', 7, 7, '2024-05-11', '11:00:00', '12:00:00', 'Sim', 150, 'Cartão'),
-(8, 'CRM555', 8, 8, '2024-05-12', '12:00:00', '13:00:00', 'Sim', 170, 'Dinheiro');
+(8, 'Segunda', '12:00:00', '16:00:00', 'CRM555');
 
 # Populando tabela de Consultas
 INSERT INTO CONSULTA (IdCon, CRM, IdEsp, IdPac, Data, HoraInicCon, HoraFimCon, Pagou, ValorPago, FormaPagamento) VALUES 

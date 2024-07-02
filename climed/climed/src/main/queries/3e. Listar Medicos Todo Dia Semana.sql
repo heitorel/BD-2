@@ -4,7 +4,7 @@
 # Marina Gonçalves do Nascimento - 10367291 
 
 # Listar o nome dos médicos que atendem consultas todos os dias da semana.
-
+USE CLIMED;
 SELECT DISTINCT M.NomeM
 FROM MEDICO M
 WHERE M.CRM IN (

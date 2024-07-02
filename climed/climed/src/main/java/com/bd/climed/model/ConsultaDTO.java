@@ -3,6 +3,7 @@ package com.bd.climed.model;
 import java.sql.Date;
 import java.sql.Time;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,8 +11,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name="consulta")
 public class ConsultaDTO {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int IdCon;
     private String CRM;
     private int IdEsp;
