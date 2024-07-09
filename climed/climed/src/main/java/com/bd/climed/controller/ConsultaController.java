@@ -24,7 +24,6 @@ public class ConsultaController {
     @GetMapping("/{id}")
     public ResponseEntity<Consulta> getConsultaById(@PathVariable int id) {
         Optional<Consulta> consulta = consultaService.findById(id);
-        System.out.println("CHAMOU O getConsultaById");
         return consulta.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
